@@ -23,7 +23,7 @@ void drawSun(float x, float y, float r, int d, float c) {
   d-=1;
   strokeWeight(d);
   stroke(100-(d+1)*25*sin(t), 100-(d+1)*25*sin(t+PI/3), 100-(d+1)*25*sin(t+2*PI/3));
-  circle(x, y, r);
+  ellipse(x, y, r, r);
   if (d > 0) {
     for(int i = 0; i < 6; i++) {
       strokeWeight(d);
